@@ -1,0 +1,6 @@
+<div *ngFor="let comp of filtros">
+  <app-operacao-diaria #operDiaria *ngIf="comp.componente == 'app-operacao-diaria'" [dias]="comp.param"></app-operacao-diaria>
+  <div *ngIf="comp.componente == 'app-ultima-operacao'">
+    <app-ultima-operacao></app-ultima-operacao>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<span style="text-align:left; padding-left: 20px">
+  Últimas Operações</span>
+<div>
+  <button type="button" class="btn btn-outline-secondary btn-lg-round" style=" margin-left: 10px" 
+        *ngFor="let conta of getUltimasOperacoes(3)"
+    id="{{conta.nomeConta}}">
+    {{conta.nomeCliente}}
+  </button>
+</div>
